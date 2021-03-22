@@ -21,3 +21,5 @@ I used the Udacity repository, which is the template to do the project.
 I look up about github in google and used this pages:
 https://docs.github.com/en/github/using-git/ignoring-files
 https://www.youtube.com/watch?v=BaY7FvCIH18
+When I worked in bikeshare.py project i used to read this page:
+https://www.learnpython.org/es/
