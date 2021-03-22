@@ -7,7 +7,7 @@ Project created: Tuesday, 23th February 2021.
 pdsnd_github is the original name, I don't change this.
 
 ### Description
-Describe what your project is about and what it does
+My project have some csv files about rent bike in three different places, it has too, a python code with some analysis about those data.
 
 ### Files used
 Include the files used
