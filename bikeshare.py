@@ -1,3 +1,4 @@
+#libraries to use 
 import time
 import pandas as pd
 import numpy as np
@@ -39,7 +40,8 @@ def get_filters():
     return city, month, day
 
     city, month, day = get_filters()
-    
+
+
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -68,7 +70,7 @@ def load_data(city, month, day):
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month) + 1
 
-        # filter by month to create the new dataframe
+        # Dataframe created with the chosen month "filtered by month"
         df = df[df['month'] == month]
 
     # filter by day of week if applicable
@@ -78,6 +80,7 @@ def load_data(city, month, day):
 
     return df
 
+#statistics about travel time in bike
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
@@ -105,7 +108,7 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#analysis about stations of bikeshare data
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -128,7 +131,7 @@ def station_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#statistics about time use for bikeshare data 
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
@@ -146,7 +149,7 @@ def trip_duration_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#Calculating  basic statistics about bike users 
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
@@ -178,7 +181,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+#asking to the user if he/she want to see the raw data
 def main():
     while True:
         city, month, day = get_filters()
