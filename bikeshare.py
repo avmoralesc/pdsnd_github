@@ -1,3 +1,4 @@
+#libraries to use 
 import time
 import pandas as pd
 import numpy as np
@@ -68,7 +69,7 @@ def load_data(city, month, day):
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month) + 1
 
-        # filter by month to create the new dataframe
+        # Dataframe created with the chosen month "filtered by month"
         df = df[df['month'] == month]
 
     # filter by day of week if applicable
